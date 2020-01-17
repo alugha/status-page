@@ -21,29 +21,11 @@ export const App: FunctionComponent = () => {
       </Main>
 
       <Footer>
-        <a
-          href="https://alugha.com/privacy"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Privacy Policy
-        </a>
+        <a href="https://alugha.com/privacy">Privacy Policy</a>
         {' · '}
-        <a
-          href="https://alugha.com/disclaimer"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Disclaimer
-        </a>
+        <a href="https://alugha.com/disclaimer">Disclaimer</a>
         {' · '}
-        <a
-          href="https://alugha.com/disclaimer"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Terms of Use
-        </a>
+        <a href="https://alugha.com/disclaimer">Terms of Use</a>
       </Footer>
     </Wrapper>
   );

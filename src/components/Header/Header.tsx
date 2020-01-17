@@ -4,7 +4,9 @@ import { HeaderStyled, Title } from './elements';
 
 export const Header: FunctionComponent = () => (
   <HeaderStyled>
-    <Logo />
+    <a href="https://alugha.com" title="alugha">
+      <Logo />
+    </a>
     <Title>System Status</Title>
   </HeaderStyled>
 );
