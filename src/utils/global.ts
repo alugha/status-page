@@ -20,7 +20,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   a {
-    color: ${({ theme }: any) => theme.white};
+    color: inherit;
     text-decoration: none;
   }
 `;

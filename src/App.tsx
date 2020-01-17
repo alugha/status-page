@@ -21,15 +21,29 @@ export const App: FunctionComponent = () => {
       </Main>
 
       <Footer>
-        Updates will be provided via the{' '}
         <a
-          href="https://twitter.com/csbstatus"
+          href="https://alugha.com/privacy"
           rel="noopener noreferrer"
           target="_blank"
         >
-          @csbstatus
-        </a>{' '}
-        twitter feed—follow us there!
+          Privacy Policy
+        </a>
+        {' · '}
+        <a
+          href="https://alugha.com/disclaimer"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Disclaimer
+        </a>
+        {' · '}
+        <a
+          href="https://alugha.com/disclaimer"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Terms of Use
+        </a>
       </Footer>
     </Wrapper>
   );
