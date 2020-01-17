@@ -52,7 +52,9 @@ export const DownTimes: FunctionComponent<Props> = ({
         {lastMonth(checksWithDownTimes).map(check => (
           <Service key={check.token}>
             <Header>
-              <Alias>{check.alias}</Alias>
+              <Alias>
+                <a href={`https://updown.io/${check.token}`}>{check.alias}</a>
+              </Alias>
 
               <Data>
                 {check.uptime.toFixed(2)}% uptime for the last 30 days
