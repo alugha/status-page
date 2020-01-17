@@ -34,7 +34,7 @@ export const Services = styled.ul`
   grid-row-gap: 60px;
   padding: 60px 0 0;
   margin: 20px 0 0;
-  border-top: 1px solid #242424;
+  border-top: 1px solid #ccc;
 
   @media (max-width: 920px) {
     grid-template-columns: repeat(1, 1fr);

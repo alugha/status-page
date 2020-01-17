@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   padding-top: 1rem;
   margin-top: 56px;
-  border-top: 1px solid #242424;
+  border-top: 1px solid #ccc;
 
   li:not(:last-child) {
     margin-right: 2rem;

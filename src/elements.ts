@@ -1,15 +1,12 @@
 import styled from 'styled-components';
 
 export const Main = styled.main`
-  background: #151515;
-  box-shadow: 0 2px 0.25rem rgba(0, 0, 0, 0.25),
-    0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-  border-radius: 0.25rem;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 50px 0px;
+  border-radius: 0.5rem;
   width: 890px;
   max-width: 100%;
   padding: 2.5rem;
-  box-sizing: border-box;
-  border-top: 1px solid #242424;
 `;
 
 export const Wrapper = styled.div`

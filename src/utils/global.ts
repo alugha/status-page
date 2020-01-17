@@ -7,8 +7,9 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     box-sizing: border-box;
-    background: #040404;
-    color: #fff;
+    background: linear-gradient(rgb(255, 255, 255), rgb(225, 231, 233));
+    min-height: 100vh;
+    color: #333;
     /* System font stack */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
@@ -26,11 +27,11 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const theme = {
-  white: '#ffffff',
-  fadedWhite: '#999',
+  white: '#111',
+  fadedWhite: '#333',
   yellow: '#F59300',
   green: '#30d158',
   transparentWhite: 'rgba(255, 255, 255, 0.2)',
   darkWhite: 'rgba(255, 255, 255, 0.6)',
-  black: '#000000',
+  black: '#fefefe',
 };
