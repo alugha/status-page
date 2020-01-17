@@ -14,7 +14,7 @@ import {
   Status,
   AllStatus,
 } from './elements';
-import { lastMonth, empty, five } from './fn';
+import { lastMonth, empty, placeholders } from './fn';
 
 type Props = {
   checksWithDownTimes: CheckWithDownTimes[];
@@ -26,16 +26,16 @@ export const DownTimes: FunctionComponent<Props> = ({
     return (
       <>
         <Services>
-          {five.map(i => (
+          {placeholders.map(i => (
             <Service key={i}>
               <Header>
                 <Alias>Getting data</Alias>
               </Header>
 
               <AllStatus>
-                {empty.map((_, i) => {
-                  return <Status key={i} loading />;
-                })}
+                {empty.map((_, i) => (
+                  <Status key={i} loading />
+                ))}
               </AllStatus>
             </Service>
           ))}

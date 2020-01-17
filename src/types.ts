@@ -29,6 +29,7 @@
 export type Check = {
   alias: string;
   down: boolean;
+  published: boolean;
   last_check_at: string;
   token: string;
   uptime: number;

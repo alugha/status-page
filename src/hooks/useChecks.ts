@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 import { Check } from '../types';
 import { request } from '../utils/fetch';
 
-const getChecks = async () => (await request<Check[]>('/checks')).data;
+const getChecks = () => request<Check[]>('/checks');
 
-export const useChecks = () => {
+export const useChecks = (): [Check[], boolean] => {
   const [checks, setChecks] = useState<Check[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -13,11 +13,11 @@ export const useChecks = () => {
     setLoading(true);
 
     getChecks().then(checks => {
-      setChecks(checks);
+      setChecks(checks.filter(c => c.published));
 
       setLoading(false);
     });
   }, []);
 
-  return [checks, loading] as [Check[], boolean];
+  return [checks, loading];
 };

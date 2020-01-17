@@ -6,10 +6,10 @@ import { request } from '../utils/fetch';
 import { useChecks } from './useChecks';
 
 const flatten = <T>(array: T[]) => ([] as T[]).concat(...array);
-const getDownTimes = async (token: string) =>
-  (await request<DownTime[]>(`/checks/${token}/downtimes`)).data;
+const getDownTimes = (token: string) =>
+  request<DownTime[]>(`/checks/${token}/downtimes`);
 
-export const useDowntime = () => {
+export const useDowntime = (): [CheckWithDownTimes[], Check[], boolean] => {
   const [checks, loading] = useChecks();
   const [checksWithDownTimes, setDownTimes] = useState<CheckWithDownTimes[]>(
     []
@@ -32,9 +32,5 @@ export const useDowntime = () => {
       .then(setDownTimes);
   }, [loading, checks]);
 
-  return [checksWithDownTimes, checks, loading] as [
-    CheckWithDownTimes[],
-    Check[],
-    boolean
-  ];
+  return [checksWithDownTimes, checks, loading];
 };

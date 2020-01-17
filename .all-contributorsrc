@@ -37,6 +37,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "niklaskorz",
+      "name": "Niklas Korz",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/590517?v=4",
+      "profile": "https://niklaskorz.de",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7

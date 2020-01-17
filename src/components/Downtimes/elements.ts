@@ -3,24 +3,20 @@ import styled, { css, keyframes } from 'styled-components';
 import { Container as Tooltip } from '../Tooltip/elements';
 
 export const Alias = styled.h3`
-  ${({ theme }) => css`
-    margin: 0;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    color: ${theme.white};
-  `};
+  margin: 0;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  color: ${({ theme }) => theme.white};
 `;
 
 export const Data = styled.span`
-  ${({ theme }) => css`
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    text-align: right;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
 
-    color: ${theme.fadedWhite};
-  `};
+  color: ${({ theme }) => theme.fadedWhite};
 `;
 
 export const Header = styled.div`
@@ -32,19 +28,17 @@ export const Header = styled.div`
 `;
 
 export const Services = styled.ul`
-  ${({ theme }) => css`
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 60px;
-    padding: 60px 0 0;
-    margin: 20px 0 0;
-    border-top: 1px solid #242424;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 60px;
+  padding: 60px 0 0;
+  margin: 20px 0 0;
+  border-top: 1px solid #242424;
 
-    @media (max-width: 920px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  `};
+  @media (max-width: 920px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `;
 
 export const Service = styled.li`

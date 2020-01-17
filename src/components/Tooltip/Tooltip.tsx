@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import { format } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 
 import { DownTime } from '../../types';
 
@@ -12,7 +12,7 @@ export const Tooltip: FunctionComponent<Props> = ({ downTime }) => (
   <Container>
     {downTime ? (
       <>
-        <Info>{format(downTime.started_at, 'dddd D MMMM')}</Info>
+        <Info>{format(parseISO(downTime.started_at), 'dddd D MMMM')}</Info>
 
         <Info bold>Down for {Math.floor(downTime.duration / 60)}m</Info>
       </>

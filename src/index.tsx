@@ -9,7 +9,6 @@ const Main: FunctionComponent = () => (
   <ThemeProvider theme={theme}>
     <>
       <GlobalStyle />
-
       <App />
     </>
   </ThemeProvider>

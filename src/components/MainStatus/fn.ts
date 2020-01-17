@@ -1,4 +1,4 @@
-import { format } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 
 import { Check } from '../../types';
 
@@ -8,4 +8,4 @@ export const upPercent = (checks: Check[]) =>
   (checks.filter(({ down }) => !down).length / checks.length) * 100 + '%';
 
 export const lastCheck = ([newestCheck]: Check[]) =>
-  format(newestCheck.last_check_at, 'MMMM Do YYYY[,] h:mA');
+  format(parseISO(newestCheck.last_check_at), "MMMM Do yyyy',' h:ma");
