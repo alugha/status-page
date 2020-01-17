@@ -20,3 +20,5 @@ jobs:
       with:
         build_dir: build
         fqdn: status.alugha.com
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
