@@ -1,54 +1,34 @@
 {
-  "name": "CodeSandbox Status",
-  "short_name": "CodeSandbox Status",
+  "name": "alugha status",
+  "short_name": "alugha status",
   "icons": [
     {
-      "src": "codesandbox-16.png",
+      "src": "favicon-16.png",
       "type": "image/png",
       "sizes": "16x16"
     },
     {
-      "src": "codesandbox-32.png",
+      "src": "favicon-32.png",
       "type": "image/png",
       "sizes": "32x32"
     },
     {
-      "src": "codesandbox-128.png",
+      "src": "favicon-96.png",
       "type": "image/png",
-      "sizes": "128x128"
+      "sizes": "96x96"
     },
     {
-      "src": "codesandbox-256.png",
+      "src": "favicon-192.png",
       "type": "image/png",
-      "sizes": "256x256"
+      "sizes": "192x192"
     },
     {
-      "src": "codesandbox-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    },
-    {
-      "src": "codesandbox-1024.png",
-      "type": "image/png",
-      "sizes": "1024x1024"
-    },
-    {
-      "src": "apple-touch-icon.png",
-      "type": "image/png",
-      "sizes": "57x57"
-    },
-    {
-      "src": "apple-touch-icon-152x152.png",
-      "type": "image/png",
-      "sizes": "152x152"
-    },
-    {
-      "src": "apple-touch-icon-180x180.png",
+      "src": "apple-touch-icon-precomposed.png",
       "type": "image/png",
       "sizes": "180x180"
     }
   ],
-  "description": "An online editor tailored for web applications",
+  "description": "The multilingual video platform",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

@@ -4,14 +4,12 @@ import { Container as Tooltip } from '../Tooltip/elements';
 
 export const Alias = styled.h3`
   margin: 0;
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   color: ${({ theme }) => theme.white};
 `;
 
 export const Data = styled.span`
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   text-align: right;
