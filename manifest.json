@@ -1,0 +1,37 @@
+{
+  "name": "alugha status",
+  "short_name": "alugha status",
+  "icons": [
+    {
+      "src": "favicon-16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "favicon-32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "favicon-96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "favicon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "apple-touch-icon-precomposed.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ],
+  "description": "The multilingual video platform",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1C2022",
+  "theme_color": "#1C2022"
+}
