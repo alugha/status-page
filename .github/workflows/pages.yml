@@ -4,22 +4,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Setup node
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12.x
-    - name: build
-      run: |
-        yarn --frozen-lockfile
-        yarn build
-      env:
-        REACT_APP_UPDOWN_API_KEY: ${{ secrets.UPDOWN_API_KEY }}
-    - name: GitHub Pages
-      if: success()
-      uses: crazy-max/ghaction-github-pages@v1
-      with:
-        build_dir: build
-        fqdn: status.alugha.com
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v1
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: build
+        run: |
+          yarn --frozen-lockfile
+          yarn build
+        env:
+          REACT_APP_UPDOWN_API_KEY: ${{ secrets.UPDOWN_API_KEY }}
+      - name: Deploy
+        uses: docker://peaceiris/gh-pages:v2
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./build
