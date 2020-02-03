@@ -42,6 +42,7 @@ export const Container = styled.div`
 `;
 
 export const Info = styled.span<{ bold?: boolean }>`
+  white-space: nowrap;
   font-size: 0.75rem;
   color: ${({ theme }) => theme.black};
   display: block;
