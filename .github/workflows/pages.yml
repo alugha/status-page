@@ -16,7 +16,8 @@ jobs:
       env:
         REACT_APP_UPDOWN_API_KEY: ${{ secrets.UPDOWN_API_KEY }}
     - name: GitHub Pages
-      uses: crazy-max/ghaction-github-pages@v1.2.5
+      if: success()
+      uses: crazy-max/ghaction-github-pages@v1
       with:
         build_dir: build
         fqdn: status.alugha.com
