@@ -12,7 +12,7 @@ export const Tooltip: FunctionComponent<Props> = ({ downTime }) => (
   <Container>
     {downTime ? (
       <>
-        <Info>{format(parseISO(downTime.started_at), 'dddd D MMMM')}</Info>
+        <Info>{format(parseISO(downTime.started_at), 'EEEE, d MMMM')}</Info>
 
         <Info bold>Down for {Math.floor(downTime.duration / 60)}m</Info>
       </>
