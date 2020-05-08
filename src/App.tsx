@@ -25,7 +25,7 @@ export const App: FunctionComponent = () => {
         {' · '}
         <a href="https://alugha.com/disclaimer">Disclaimer</a>
         {' · '}
-        <a href="https://alugha.com/disclaimer">Terms of Use</a>
+        <a href="https://alugha.com/tos">Terms of Use</a>
       </Footer>
     </Wrapper>
   );
