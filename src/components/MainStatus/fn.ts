@@ -8,4 +8,4 @@ export const upPercent = (checks: Check[]) =>
   (checks.filter(({ down }) => !down).length / checks.length) * 100 + '%';
 
 export const lastCheck = ([newestCheck]: Check[]) =>
-  format(parseISO(newestCheck.last_check_at), "MMMM do yyyy',' h:ma");
+  format(parseISO(newestCheck.last_check_at), "MMMM do yyyy',' H:mm");
