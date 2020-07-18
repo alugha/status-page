@@ -22,7 +22,7 @@ export const MainStatus: FunctionComponent<Props> = ({ checks, loading }) => (
         {loading
           ? 'Getting the data'
           : isDown(checks)
-          ? 'We are experiences some issues'
+          ? 'We are experiencing some issues'
           : 'All Services Operational'}
       </Title>
 
